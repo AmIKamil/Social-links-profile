@@ -1,0 +1,102 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* This is needed to allow the card to be centered on the screen. Setting body to 100% height wouldnt be enough
+     Because when you use a percentage youre telling the element to grow to a certain percentage of its parent. 
+     html tag is body's parent.  Could have also set height on the :root pseudo class above, and height on the body
+     selector below. Itd be the same thing.*/
+  html,
+  body {
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--Grey-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .card {
+    min-width: 320px;
+    max-width: 500px;
+    background-color: var(--Grey-800);
+    color: var(--White);
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5;
+  }
+
+  .card img {
+    border-radius: 50px;
+    padding: 10px;
+  }
+
+  .card #nameLocation {
+    padding: 10px;
+    text-align: center;
+    font-family: Inter, serif;
+  }
+
+  .card #nameLocation h1 {
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+
+  .card #nameLocation p {
+    margin-top: 5px;
+    font-size: 0.80em;
+    font-weight: 600;
+    color: var(--Green);
+  }
+
+  .card #bio {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .socials {
+    list-style: none;
+    width: 85%;
+    font-family: Inter, serif;
+    font-size: 0.80em;
+    font-weight: 700;
+  }
+
+  .socials li {
+    background-color: var(--Grey-700);
+    border-radius: 7px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    flex-grow: 1;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+  }
+
+  li a {
+    color: var(--White);
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+ 
+ 
